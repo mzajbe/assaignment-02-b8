@@ -214,7 +214,6 @@
 }
 
 
-
 /* play instantly section  */
 
 .play-instantly-section {
@@ -291,12 +290,12 @@
 }
 
 .game-card:hover,
-game-card:focus {
+:focus {
     color: #F948B2;
     border: 1px solid #F948B2;
     border-radius: 50px;
-    padding: 5px;
-    z-index: 1;
+    padding: 2px;
+    cursor: pointer;
 }
 
 /* footer  */
