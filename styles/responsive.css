@@ -32,31 +32,8 @@
     }
 
     
-    
-    
-    
-    
-    /* .play-instantly-img{
-        
-    }
-    .play-instantly-section{
-        flex-direction: column;
-        
-    }
-    .play-instantly-img-second img{
-        width: 30%;
-        height: 30%;
-        left: 40%;
-    }
-    .play-instantly-img img{
-        width: 80%;
-        height: 80%;
-        
-    } */
 
 
-
-    /* test  */
 
     .play-instantly-section {
         display: flex;
@@ -97,5 +74,41 @@
     .footer-icon i{
         justify-content: center;
         padding: 15px;
+    }
+}
+
+
+/* tab  */
+@media screen and (min-width:583px) and (max-width:768px) {
+    .nav{
+        flex-direction: column;
+
+    }
+    .nav-title{
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+    }
+
+
+    /* online game section  */
+    .online-game-card{
+        flex-direction: column;
+    }
+
+    /* play instantly section  */
+
+    .play-instantly-section{
+        flex-direction: column;
     }
 }
