@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Work+Sans:wght@600&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -84,10 +87,7 @@
 .banner-text {
     width: 50%;
 
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
+   
 }
 
 .banner-text p {
@@ -204,6 +204,7 @@
 
 .game-card-single {
     margin: 10px;
+    position: relative;
 
 }
 
@@ -213,6 +214,73 @@
     border-radius: 16px;
 }
 
+.overlay-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border-radius: 16px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.game-card-single:hover::after {
+    opacity: 1;
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.content {
+    color: white;
+    font-family: verdana;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    border-radius: 16px;
+    transition: opacity 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.overlay .content {
+    display: none;
+}
+
+.overlay:hover .content {
+    display: block;
+}
+
+.game-card-single p {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
 
 /* play instantly section  */
 
@@ -220,6 +288,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 100px;
 }
 
 .play-instantly-img img {
@@ -260,6 +329,7 @@
     width: 318.5px;
     height: 365.083px;
 }
+
 
 /* all game section  */
 
@@ -342,16 +412,16 @@
 
 .footer-icon {
     display: flex;
-    
+
     gap: 10px;
 }
-.footer-icon i{
+
+.footer-icon i {
     width: 50px;
     height: 50px;
 }
-.fa-brands{
-    
-}
+
+.fa-brands {}
 
 .licence {
     color: rgba(255, 255, 255, 0.60);
